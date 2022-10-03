@@ -39,15 +39,13 @@
 
     <section class="container1">
         <div id="hello.html" class="hello-html">
-            <div class="hello-me">
+            <div class="hello-me">     
                 <p class="h">¡Hola! Soy</p>
                 <h1 class="lm">Laura Marcelli</h1>
                 <p>Desarrolladora Front-end, Diseñadora Textil y amante del diseño</p>
-                <div>
-                   <a class="buttonwhati-do" href="#proyects-several.html" ></a>LO QUE HAGO  
-                </div>
-                
-    
+                <div class="button">
+                    <a class="buttonwhati-do" href="#proyects-several.html" >LO QUE HAGO</a>  
+                 </div>          
             </div>
             <div class="mipicture">
                 <img src="imagenes/indexhtml (1).png" alt class="imagen-img">
@@ -111,38 +109,38 @@
         <div class="flex-proyects">
             <div style="flex-grow: 1;" class="proyect-">
                 <a href="#proyect-1"></a>
-                <img src="imagenes/undraw_Movie_night_re_9umk.png"alt>
-                <p>Buscador de películas</p>
-             </div>
-            <div style="flex-grow: 1;" class="proyect-">
-                <a href="#proyect-1"></a> 
-                <img src="imagenes/undraw_Mobile_app_re_catg.png"alt>
-                <p>Todo app</p>
-             </div>
-            <div style="flex-grow: 1;" class="proyect-">
-                <a href="#proyect-1"></a>
-                <img src="imagenes/undraw_Calendar_re_ki49.png"alt>
-                <p>Administrador de reuniones</p>
-             </div>
-            <div style="flex-grow: 1;" class="proyect-">
-                <a href="#proyect-1"></a>
-                <img src="imagenes/undraw_Savings_re_eq4w.png"alt>
-                <p> Controlador de gastos</p>
-            </div>
-            <div style="flex-grow: 1;" class="proyect-"> 
-                <a href="#proyect-1"></a>
-                <img src="imagenes/undraw_old_day_6x25.png"alt>
-                <p>Match3</p>
+                <img src="imagenes/undraw_Portfolio_re_qwm5.png" alt>
+                <p>Portfolio</p>               
              </div>
             <div style="flex-grow: 1;" class="proyect-">
                 <a href="#proyect-1"></a>
                 <img src="imagenes/undraw_Mobile_user_re_xta4.png"alt>
-                <p>Generador de memes</p>
+                <p>Generador de memes</p>              
+             </div>
+            <div style="flex-grow: 1;" class="proyect-">
+                <a href="#proyect-1"></a>
+                <img src="imagenes/undraw_old_day_6x25.png"alt>
+                <p>Match3</p>                              
+             </div>
+            <div style="flex-grow: 1;" class="proyect-">
+                <a href="#proyect-1"></a>
+                <img src="imagenes/undraw_Savings_re_eq4w.png"alt>
+                <p> Controlador de gastos</p>                              
+            </div>
+            <div style="flex-grow: 1;" class="proyect-">
+                <a href="#proyect-1"></a>
+                <img src="imagenes/undraw_Calendar_re_ki49.png"alt>
+                <p>Administrador de reuniones</p>                                
+             </div>
+            <div style="flex-grow: 1;" class="proyect-">
+                <a href="#proyect-1"></a> 
+                <img src="imagenes/undraw_Mobile_app_re_catg.png"alt>
+                <p>Todo app</p>                
              </div>
             <div class="proyect-">
                 <a href="#proyect-1"></a>
-                <img src="imagenes/undraw_Portfolio_re_qwm5.png" alt>
-                <p>Portfolio</p>
+                <img src="imagenes/undraw_Movie_night_re_9umk.png"alt>
+                <p>Buscador de películas</p>
              </div>            
         </div>      
     </section> 
@@ -158,16 +156,18 @@
                     <ul>
                         <li>
                             <i class="devicon-linkedin-plain colored"></i>
-                            <a href="http://www.linkedin.com/in/laura-marcelli">lauramarcelli</a></li>
+                            <a href="http://www.linkedin.com/in/laura-marcelli" target ="_blank">lauramarcelli</a></li>
                         <li>
                             <i class="devicon-github-original colored"></i>        
-                            <a href="https://github.com/lauramarcelli?tab=repositories">laura marcelli</a>
+                            <a href="https://github.com/lauramarcelli?tab=repositories" target ="_blank">laura marcelli</a>
                         </li>
                         <li>
                             <i class="devicon-twitter-original colored"></i>
-                            <a href="https://twitter.com/laumar82">lauramar</a>
+                            <a href="https://twitter.com/laumar82" target ="_blank">lauramar</a>
                         </li>
-                        <li><img src="imagenes/letter.png" alt="laura.marcelli@gmail.com" class="mail-contacto">laura.marcelli@gmail.com
+                        <li class="mailcontact">
+                            <img src="imagenes/letter.png" class="mail-contact">
+                            <a href="mailto:laura.marcelli@gmail.com">laura.marcelli@gmail.com</a>              
                         </li>
                      </ul>
                 </div>
@@ -175,11 +175,12 @@
             </div>     
             <div class="c3">
                 <h2>Escribime</h2>
-                <form>
+                <form action="https://formsubmit.co/laura.marcelli@gmail.com" method="POST" />
+               
                     <div class="firstline">
                         <div class="firstline1-form">
                             <label for="iname">Nombre*</label>
-                            <input id="iname" type="text" name="name" placeholder="p. ej.: Laura">                      
+                            <input id="iname" type="text" name="name" placeholder="p. ej.: Laura" required>                      
                         </div>
                         <div class="firstline2-form">
                             <label for="isurname">Apellido*</label>
@@ -188,7 +189,7 @@
                     </div>                  
                     <div class="firstline3-form"> 
                         <label for="iemail">Email*</label>
-                        <input id="iemail" type="email" name="email" placeholder="p. ej.: laura.marcelli@gmail.com"><br>
+                        <input id="iemail" type="email" name="email" placeholder="p. ej.: laura.marcelli@gmail.com" required><br>
                     </div>
                     <div class="bodymessage">
                         <label for="imensaje">Mensaje*</label>
@@ -221,19 +222,18 @@
         <div class="icons">
             <ul>
                 <li>
-                    <i class="devicon-linkedin-plain colored"></i>
-                    <a href="http://www.linkedin.com/in/laura-marcelli"></a></li>
+                    <a href="http://www.linkedin.com/in/laura-marcelli" target ="_blank"><i class="devicon-linkedin-plain colored"></i></a></li>
+                <li>       
+                    <a href="https://github.com/lauramarcelli?tab=repositories" target ="_blank"><i class="devicon-github-original colored"></i></a>
+                 </li>
                 <li>
-                    <i class="devicon-github-original colored"></i>        
-                    <a href="https://github.com/lauramarcelli?tab=repositories"></a>
-                </li>
+                    <a href="https://twitter.com/laumar82" target ="_blank"><i class="devicon-twitter-original colored"></i></a>
+                 </li>
                 <li>
-                    <i class="devicon-twitter-original colored"></i>
-                    <a href="https://twitter.com/laumar82"></a>
-                </li>
-                <li><img src="imagenes/letter.png" alt="laura.marcelli@gmail.com">
-                </li> 
-             </ul>
+                    <img src="imagenes/letter.png" alt="laura.marcelli@gmail.com">
+                    <a href="mailto:laura.marcelli@gmail.com"></a>
+                 </li> 
+            </ul>
         </div>
       
      <p>"Hecho con &#128147 por Laura"</p>

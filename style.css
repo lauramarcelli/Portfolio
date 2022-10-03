@@ -50,9 +50,25 @@ h2{
 
 body{
     background-color: whitesmoke;
-    min-height: 100vh;
 }
-
+body::-webkit-scrollbar {
+    width: 12px;               
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(5, 131, 242);        
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(140, 66, 120);   
+    border-radius: 20px;      
+    border: 3px solid rgb(5, 131, 242);  
+  }
+  body {
+    scrollbar-width: thin;          
+    scrollbar-color: rgb(140, 66, 120) rgb(5, 131, 242);   
+  }
+  
 /*navbar*/        
 
 header{
@@ -110,26 +126,25 @@ header{
    
 /*hi*/
 
-.container1{
-    margin: auto;
-	max-width: 1300px;
-	padding: 0 20px;
-    display: flex; 
+.container1{   
+    min-height: 100vh;		
+    display: flex;
 }    
 
 .hello-me{    
-    margin-top:100px;
+    margin-top: 100px;
 	max-width: 1300px;
-	padding: 0 20px;
+	padding: 20px;           
    }
-
+.button{
+   margin-top: 50px;
+}
 .buttonwhati-do{
-    cursor: pointer;
-    margin-top:30px ;
+    cursor: pointer; 
     color: white;
     border: none;
     border-radius: 40px;
-    padding: 20px;
+    padding: 10px 30px;
     background-color: rgb(5, 131, 242);
     font-weight: 600;
    }
@@ -153,7 +168,8 @@ header{
 
 .mipicture{
     height: 400px;
-    text-align: right;  
+    text-align: right;
+    margin-left: 100px;  
 }
 
 .h{
@@ -334,6 +350,7 @@ header{
     width: 50%;
     margin-top: 40px;
     margin-bottom: 30px;
+   
     
 }
 .contact-title{
@@ -384,18 +401,22 @@ header{
     cursor: pointer;
 }
 
-.c2 img{
+.mail-contact{
     height: 20px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-left: 30px;     
-}
+    margin-left: 30px;
+    }
 
-.c2 img:hover{
-    padding: 10px;
+.mail-contact img:hover{
+    padding: 18px;
     border-radius: 20px;
     background-color: rgb(247, 218, 236);
+    cursor: pointer;   
+}
+.mailcontact :active{
+    width: 60%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(247, 218, 236, 0.4);
     cursor: pointer;
 }
 
@@ -445,7 +466,10 @@ background-color: rgb(247, 218, 236);
     background-color: rgb(247, 218, 236);    
 }
 
-.c3 input:hover{
+.firstline input:hover{
+    border: 2px solid rgb(224, 97, 191);
+}
+.firstline3-form input:hover{
     border: 2px solid rgb(224, 97, 191);
 }
 .c3 textarea:hover {
