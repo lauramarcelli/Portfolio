@@ -154,7 +154,6 @@ header{
 }
 
 .hello-html{
-  
     padding: 110px 40px 130px;
     overflow: hidden;
     width: 100%;  
@@ -303,8 +302,10 @@ header{
     font-style: normal;
     align-items: center;
     text-align: center;
-    margin: 10px;
-    
+    margin: 10px;   
+}
+.proyect-{
+    flex-grow: 1;
 }
 .proyect- img{
     height: auto;
@@ -314,6 +315,9 @@ header{
 }
 .flex-proyects div:hover {
     border: 2px solid rgb(224, 97, 191);
+}
+.proyect-1b{
+    width: 31.5%;
 }
 
 /*contact*/
@@ -472,6 +476,10 @@ background-color: rgb(247, 218, 236);
 .firstline3-form input:hover{
     border: 2px solid rgb(224, 97, 191);
 }
+.firstline3-form input:focus:invalid{
+    outline: 2px solid red;
+}
+
 .c3 textarea:hover {
     border: 2px solid rgb(224, 97, 191);
 }
@@ -598,6 +606,47 @@ background-color: rgb(247, 218, 236);
 }
 
 
+/*responsive tablet*/
+@media (max-width: 880px){
+    .navbar{
+        display: none;
+    }
+    .hello-html{   
+        width: 100%;		
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    } 
+    .mipicture{
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 20px; 
 
-    
+    }
+    .proyect-1b{
+        width: 47%;
+        height: 260px;
+    }
+
+    .contact{
+        flex-direction: column;
+    }
+    .container-2 {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: 130vh ;
+        margin: auto;
+          
+    } 
+    .c3{
+        display: flex;
+        flex-direction: column;     
+        height: 200px;
+        width: 90%;
+        margin-top: 20px;}
+        
+}
+
+
 
