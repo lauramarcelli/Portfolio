@@ -164,10 +164,13 @@ header{
     margin: auto;
 }
 
-.mipicture{
-    height: 300px;
+.mipicture img{
+    height: 400px;
     text-align: right;
-    margin-left: 100px;  
+    margin-left: 100px;
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 200px;  
 }
 
 .h{
