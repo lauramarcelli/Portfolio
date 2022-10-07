@@ -165,7 +165,7 @@ header{
 }
 
 .mipicture{
-    height: 400px;
+    height: 300px;
     text-align: right;
     margin-left: 100px;  
 }
@@ -343,7 +343,7 @@ header{
 .container-2 {
     display: flex;
     width: 70%;
-    height: 550px;
+    min-height: 550px;
     border: 2px solid rgb(19, 10, 203);
     border-radius: 10px;
     margin: auto;
@@ -542,10 +542,9 @@ background-color: rgb(247, 218, 236);
     justify-content: center;
     align-items: center;
     background-image: url(imagenes/holographic-purple-water-ripple-background-copy-space.jpg);
-    /*background-color: rgb(140, 66, 120);*/
     padding: 20px 20px 60px;
     min-height: 10vh; 
-    width: 100%;
+    min-width: 100%;
 }
 
 .footydisplay nav ul{
@@ -676,7 +675,7 @@ background-color: rgb(247, 218, 236);
         display: flex;
         flex-direction: column;
         width: 80%;
-        height: 150vh ;             
+        min-height: 150vh ;             
     }
    
     .c3{
@@ -719,6 +718,7 @@ background-color: rgb(247, 218, 236);
         flex-direction: row;
         gap: 5px;
     }
+  
 }
 
 
