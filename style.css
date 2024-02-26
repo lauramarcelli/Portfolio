@@ -36,7 +36,7 @@ h2{
 }
 
 .lm{
-    color: rgb(140, 66, 120);
+    color: #f92c8b;
     margin-top: 0;
     margin-bottom: 7px;
 }
@@ -50,10 +50,23 @@ h2{
 
 body{
     background-color: whitesmoke;
-    min-height: 100vh;
 }
 
-/*Navbar*/        
+::-webkit-scrollbaR {
+    width: 15px;} 
+
+::-webkit-scrollbar-track {
+    background: whitesmoke; 
+  }
+::-webkit-scrollbar-thumb {
+    background: #f92c8b; 
+    border-radius: 10px; 
+  }
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(5, 131, 242); 
+}
+  
+/*navbar*/        
 
 header{
     background-color: rgb(242, 182, 221);
@@ -95,7 +108,7 @@ header{
     color: white;
 }
 
-.menu-nav .btn-contacto{
+.menu-nav .btn-contact{
     background-color:rgb(5, 131, 242);
     color: black;
     padding: 8px;
@@ -104,41 +117,42 @@ header{
     margin-top:10px ;
 }  
 
-.menu-nav .btn-contacto:hover {
+.menu-nav .btn-contact:hover {
     background-color: rgb(7, 105, 192);
 }
    
 /*hi*/
 
-.container1{
-    margin: auto;
-	max-width: 1300px;
-	padding: 0 20px;
-    display: flex; 
+.container1{   
+    min-height: 100vh;		
+    display: flex;
 }    
 
 .hello-me{    
-    margin-top:100px;
+    margin-top: 100px;
 	max-width: 1300px;
-	padding: 0 20px;
-   }
+	padding: 20px;           
+}
 
-.whati-do{
-    margin-top:30px ;
+.button{
+   margin-top: 50px;
+}
+
+.buttonwhati-do{
+    cursor: pointer; 
     color: white;
     border: none;
     border-radius: 40px;
-    padding: 20px;
+    padding: 10px 30px;
     background-color: rgb(5, 131, 242);
     font-weight: 600;
-   }
+}
 
-.whati-do:hover {
+.buttonwhati-do:hover {
     background-color: rgb(7, 105, 192)
 }
 
 .hello-html{
-  
     padding: 110px 40px 130px;
     overflow: hidden;
     width: 100%;  
@@ -150,9 +164,13 @@ header{
     margin: auto;
 }
 
-.mipicture{
+.mipicture img{
     height: 400px;
-    text-align: right;  
+    text-align: right;
+    margin-left: 100px;
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 200px;  
 }
 
 .h{
@@ -180,6 +198,7 @@ header{
     max-width: 400px;
     margin: auto;
 }
+
 .knowledges-skills{
     display: flex
 }
@@ -207,16 +226,16 @@ header{
     background-color: whitesmoke;
     align-items: center;
     justify-content: center;
-    border: 2px solid rgb(140, 66, 120);
+    border: 2px solid #f92c8b;
     border-radius: 10px;
     font-size: 0.8em;
     font-weight: bolder;
-    }
+}
 
 /*thephrase*/
 
 .thephrase{
-    background-color: rgb(140, 66, 120);
+    background-image: url(imagenes/holographic-pastel-wavy-pattern-design-space.jpg);
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -261,7 +280,8 @@ header{
     align-items: center;
     min-height: 100px;
     width: 100%;
-    margin-top: 60px;
+    margin-top: 40px;
+    margin-bottom: 60px;
 }
 
 .flex-proyects{
@@ -269,13 +289,14 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    margin: auto;
-    background-color: blueviolet;  
+    margin: auto;  
 }
+
 .flex-proyects div img{
     height: 200px;
     width: 80%;
 }
+
 .flex-proyects div{
     padding: 5px;
     background-color: white;
@@ -285,18 +306,26 @@ header{
     font-style: normal;
     align-items: center;
     text-align: center;
-    margin: 10px;
-    
+    margin: 10px;   
 }
+
+.proyect-{
+    flex-grow: 1;
+}
+
 .proyect- img{
-    height: 200px;
-    width: calc(70%- 10px);
-    margin: 5px;
-    
+    height: auto;
+    width: auto;
+    margin: 5px;    
     cursor: pointer;
 }
-.flex-proyectos div:hover {
-    border: 2px solid rgb(224, 97, 191);
+
+.flex-proyects div:hover {
+    border: 2px solid #f92c8b;
+}
+
+.proyect-1b{
+    width: 31.5%;
 }
 
 /*contact*/
@@ -317,7 +346,7 @@ header{
 .container-2 {
     display: flex;
     width: 70%;
-    height: 550px;
+    min-height: 550px;
     border: 2px solid rgb(19, 10, 203);
     border-radius: 10px;
     margin: auto;
@@ -332,9 +361,9 @@ header{
     height: 500px;
     width: 50%;
     margin-top: 40px;
-    margin-bottom: 30px;
-    
+    margin-bottom: 30px;      
 }
+
 .contact-title{
     font-weight: bold;
     font-size: 50px;
@@ -342,25 +371,22 @@ header{
     align-items: flex-start;
     margin-bottom: 10px;
     margin-top: 10px;
-    margin-left: 0px;
-   
+    margin-left: 0px; 
 }
 
 .c2-text{
     text-align: left;
     padding: 20px 10px 30px;
-   
+}
 
-}
 .ullist{
-    padding: 6px 0px 1px 1px;
-    
+    padding: 6px 0px 1px 1px;   
 }
+
 .ullist i{
     flex-direction: column;
     margin-left: 30px;
-    margin-top: 30px;
-       
+    margin-top: 30px;      
 }  
 
 .c2 li{
@@ -368,13 +394,13 @@ header{
     padding: 10px;    
 }
 
-
 .c2 i:hover{
     padding: 10px;
     border-radius: 20px;
     background-color: rgb(247, 218, 236);
     cursor: pointer;
 }
+
 .c2 li:active{
     width: 35%;
     padding: 10px;
@@ -383,22 +409,30 @@ header{
     cursor: pointer;
 }
 
-.c2 img{
+.mailcontact {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.mail-contact{
     height: 20px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-left: 30px;     
+    margin-left: 30px;
 }
 
-.c2 img:hover{
-    padding: 10px;
+.mail-contact img:hover{
+    padding: 18px;
     border-radius: 20px;
     background-color: rgb(247, 218, 236);
-    cursor: pointer;
+    cursor: pointer;   
 }
 
-
+.mailcontact :active{
+    width: 60%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(247, 218, 236, 0.4);
+    cursor: pointer;
+}
 
 .c3{
     display: flex;
@@ -407,9 +441,9 @@ header{
     justify-content: center;
     height: 400px;
     width: 50%;
-    margin-top: 40px;
-    
+    margin-top: 40px;   
 }
+
 .c3 h2{
     font-weight: bold;
     font-size: 50px;
@@ -444,33 +478,47 @@ background-color: rgb(247, 218, 236);
     background-color: rgb(247, 218, 236);    
 }
 
-.c3 input:hover{
-    border: 2px solid rgb(224, 97, 191);
+.firstline input:hover{
+    border: 2px solid #f92c8b;
 }
+
+.firstline3-form input:hover{
+    border: 2px solid #f92c8b;
+}
+
+.firstline3-form input:focus:invalid{
+    outline: 2px solid red;
+}
+
 .c3 textarea:hover {
-    border: 2px solid rgb(224, 97, 191);
+    border: 2px solid #f92c8b;
 }
 
 .firstline{
     display: flex;
     flex-direction: row;
 }
+
 .firstline1-form{
     display: flex;
     flex-direction: column;
 }
+
 .firstline2-form{
     display: flex;
     flex-direction: column;
 }
+
 .firstline3-form{
     display: flex;
     flex-direction: column;
 }
+
 .bodymessage{
     display: flex;
     flex-direction: column;
 }
+
 .btn-send{
     background-color:rgb(5, 131, 242);
     color: black;
@@ -484,11 +532,11 @@ background-color: rgb(247, 218, 236);
 }  
 
 .btn-send:hover {
-    background-color: rgb(122, 54, 104);
+    background-color: #f92c8b;
     cursor: pointer;
-   
-
 }
+
+
 /*footer*/
 
 .footy{
@@ -496,10 +544,10 @@ background-color: rgb(247, 218, 236);
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(140, 66, 120);
+    background-image: url(imagenes/holographic-purple-water-ripple-background-copy-space.jpg);
     padding: 20px 20px 60px;
     min-height: 10vh; 
-    width: 100%;
+    min-width: 100%;
 }
 
 .footydisplay nav ul{
@@ -511,6 +559,7 @@ background-color: rgb(247, 218, 236);
     font-weight: 50px;
     margin-bottom: 5px;
 }
+
 .footydisplay nav li{
     margin-top: 5px;
     padding: 10px;
@@ -520,18 +569,19 @@ background-color: rgb(247, 218, 236);
 .footydisplay nav ul li a:hover{
     color: whitesmoke;
 }
+
 .icons{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 .icons ul{
     width: fit-content;
     list-style: none;
     margin-top: 10px;
     display: flex; 
-    padding: 20px;
-     
+    padding: 20px;    
 }
 
 .icons li{
@@ -542,8 +592,7 @@ background-color: rgb(247, 218, 236);
     border-radius: 20px;
     background-color: whitesmoke;
     margin-left: 10px; 
-    margin-right: 10px;
-      
+    margin-right: 10px;      
 } 
 
 .icons li:hover{
@@ -552,6 +601,7 @@ background-color: rgb(247, 218, 236);
     border: 1px solid whitesmoke;
     border-radius: 20px;
 }
+
 .icons i{
     justify-content: center;
     align-items: center;
@@ -559,10 +609,10 @@ background-color: rgb(247, 218, 236);
     margin-right: 2px;
     height: max-content;
 }
+
 .icons img{
     height: 20px;
-    justify-content: left; 
-    
+    justify-content: left;     
 }
 
 .footy p{
@@ -572,7 +622,106 @@ background-color: rgb(247, 218, 236);
     align-items: center;
 }
 
+/*responsive tablet*/
+
+@media (max-width: 880px){
+    .navbar{
+        display: none;
+    }
+    .hello-html{   
+        width: 100%;		
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    } 
+    .mipicture{
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 20px; 
+
+    }
+    .proyect-1b{
+        width: 47%;
+        height: 260px;
+    }
+
+    .contact{
+        flex-direction: column;
+    }
+    .container-2 {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: 130vh ;
+        margin: auto;    
+    } 
+    .c3{
+        display: flex;
+        flex-direction: column;     
+        height: 200px;
+        width: 90%;
+        margin-top: 20px;}        
+}
 
 
-    
+/*responsive cellphone*/
+
+@media (max-width: 480px){
+    .navbar{
+        display: none;
+    }
+    .proyect-1b{
+        width: 100%;
+        height: 260px;
+    }
+    .container-2 {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        min-height: 150vh ;             
+    }
+   
+    .c3{
+        display: flex;
+        flex-direction: column;     
+        height: 200px;
+        width: 80%;
+        margin-top: 40px;
+        margin-left: 20px;
+    } 
+    .c3 h2{       
+        font-weight: bold;
+        font-size: 50px;
+        margin-bottom: 10px;
+        margin-top: 90px;
+        align-items: left;
+        width: 100%;
+    }
+    .c2{
+        display: block;
+        flex-direction: column;
+        text-align: left;  
+        margin-left: 20px;
+        height: 500px;
+        width: 50%;
+        margin-top: 20px;
+        margin-bottom: 30px;      
+    }
+    .ullist i{
+        flex-direction: column;
+        margin-left: 10px;
+        margin-top: 30px;      
+    }
+    .mail-contact{
+        height: 20px;
+        margin-left: 10px;
+    }
+    .mailcontact {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+  
+}
+
 
